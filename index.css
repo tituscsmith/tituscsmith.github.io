@@ -1,0 +1,149 @@
+.full-height {
+    height: 100%;
+}
+/* Dropdown content is from w3 schools*/
+.dropbtn {
+background-color: #2db9b9;
+color: white;
+text-align:center;
+padding: 16px;
+font-size: 16px;
+border-color: black;
+border-width: thin;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+text-align:center;
+position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+text-align:center;
+background-color: #d6f5f5;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+.site-footer {
+    background: #d6f5f5;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-family: "Perpetua";
+    font-size: 100px;
+}
+
+.animate-pop-in {
+    animation: pop-in 2s ease-out forwards;
+}
+@keyframes pop-in {
+     0% {
+             opacity: 0;
+             transform: translateY(-4rem) scale(.8);
+    }
+     100% {
+            opacity: 1;
+             transform: none;
+       }
+}         
+h2 {
+    text-align: center;
+    font-family: "Perpetua";
+    font-size: 50px;
+}
+small{
+    font-size: 20px;
+    font-family: "Times New Roman";
+}
+h5{
+    font-family: "Perpetua";
+}
+.button {
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    color: grey;
+    font-size: 14px;
+    border-width: thin;
+
+}
+.button-b {
+    transition-duration: 0.4s;
+    border-radius: 15px;
+    background-color: transparent;
+    color: black;
+    font-family: "Perpetua";
+    border-color: black;
+    font-size: 35px;
+    border-width: thin medium thick;
+}
+.button:hover{
+    background-color:#bfbfbf;
+}
+
+img.profile {
+    display: flex;
+    border-radius: 50px;
+}
+.column-a{
+margin-right: .5%;
+margin-left: .5%;
+width: 32%;
+}
+.responsive-a {
+width: 100%;
+height: auto;
+}
+/* .responsive-b {
+height: auto;
+} */
+/* .responsive-width {
+font-size: 4vw;
+height: auto;
+} */
+.responsive-button {
+font-size: 4vmin;
+}
+/* From W3Schools */
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    /* background-color:#8edbfa; */
+  }
+  
+  li {
+display: inline;  
+}
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2vh;
+    display: inline-block;
+  }
+  
+  li a:hover {
+    background-color:#d4f4ff;
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- In progress Weather Site, aided by Sriram at Medium.com 
+https://medium.com/swlh/a-simple-javascript-weather-application-and-json-parsing-abd21ff0ea9a
+-->
+<html>
+ <head>
+   <title>Weather experimenting</title>
+ </head>
+<body>
+<p id="city"></p>
+<p id="temp"></p>
+<p id="description"></p>
+<p id="wind"></p>
+<p id="sunrise"></p>
+<p id="sunset"></p>
+<p id="cloudiness"></p>
+</body>
+</html>
+
+<script>
+var cityName = "Dane";
+var key = "52ca258860cc9e61d80b63f12f04beba";
+link = "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&units=imperial&apikey="+key;
+var request = new XMLHttpRequest();
+request.open('GET',link,true);
+request.onload = function(){
+ var obj = JSON.parse(this.response);
+ if (request.status >= 200 && request.status < 400) {
+ 	
+    document.getElementById("city").innerHTML = obj.name + " County";
+    document.getElementById("temp").innerHTML = "Temperature: " + obj.main.temp + "°F - Feels like: " + obj.main.feels_like + "°F";
+    document.getElementById("description").innerHTML = "Weather: " + obj.weather[0].main;
+    document.getElementById("wind").innerHTML = "Wind: " + obj.wind.speed + "mph";
+    
+    let unixUp = obj.sys.sunrise;
+    let timeUp = new Date(unixUp*1000);
+    let unixDown = obj.sys.sunset;
+    let timeDown = new Date(unixDown*1000);
+    
+    document.getElementById("sunrise").innerHTML = "Sunrise: " + timeUp;
+    document.getElementById("sunset").innerHTML = "Sunset: " + timeDown;
+    document.getElementById("cloudiness").innerHTML = "Cloudiness: " + obj.clouds.all + "%";
+    
+    
+
+ var temp = obj.main.temp;
+ 
+ }
+ else{
+ document.write("No");
+  console.log("The city doesn't exist! Kindly check");
+ }
+}
+request.send();
+</script>
