@@ -42,6 +42,9 @@ $.each(cardData, function (i) {
         
 $("#projdata").on("click", function () {});
 // });
+
+//Partiall inspired by:
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_portfolio_gallery_filter
 filterSelection("all") // Execute the function and show all columns
 
 function filterSelection(c) {
