@@ -197,6 +197,7 @@
     padding: 12px 16px;
     background-color: white;
     cursor: pointer;
+    border-color: black;
   }
   
   /* Add a grey background color on mouse-over */
@@ -206,6 +207,8 @@
   
   /* Add a dark background color to the active button */
   .btn.active {
-    background-color: #666;
+    background-color: #2db9b9;
      color: white;
+     border-color: black;
+
   }
