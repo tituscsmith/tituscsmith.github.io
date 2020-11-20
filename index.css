@@ -207,7 +207,7 @@
   
   /* Add a dark background color to the active button */
   .btn.active {
-    background-color: #2db9b9;
+    background-color: #666;
      color: white;
      border-color: black;
 
