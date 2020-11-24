@@ -27,7 +27,7 @@ $.each(cardData, function (i) {
         // }
 
         animation = "none";
-        var templateString = '<div class= "mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '><img src=' + cardData[i].image + ' class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body"><h5 class="card-title">' + cardData[i].title + '</h5>'+
+        var templateString = '<div class= "m-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '><img src=' + cardData[i].image + ' class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body"><h5 class="card-title">' + cardData[i].title + '</h5>'+
        // '<p class="card-text" data-aos="fade-up">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between data-aos="fade-up">' +
        '<p class="card-text">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between">' +
 
