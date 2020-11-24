@@ -1,11 +1,10 @@
 AOS.init();
 //Created a fitness and meal tracking mobile app with React Native in tangent with an existing RESTful API. Users are able to set nutrition and activity goals, log meals, log activity sessions, and track daily progress to goals. Integrated accessibility features to support screen reader use.
 var cardData = [
-  { image: "images/CCTall.png", class: 'mobile', alt: "Calorie Crusher Image", title: 'Calorie Crusher Mobile App', descr: 'Created a fitness and meal tracking mobile app with React Native in tangent with an existing RESTful API. Users are able to set nutrition and activity goals, log meals, log activity sessions, and track daily progress to goals. Integrated accessibility features to support screen reader use.', date: 'Nov 2020', link: '#', button: 'Coming Soon'},
-
-    { image: "images/CourseSearch.jpg", class: 'web', alt: "Course Scheduler Image", title: 'University Course Search Web App', descr: 'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model and conducted usability inspection with heuristic evaluation. Features include search filtering, ratings and recommendations, prerequisite checks, and more.', date: 'Oct 2020', link: '#', button: 'Coming Soon'},
-{ image: "images/chat.png", class: 'web', alt: "Chat Image", title: 'Socket.IO Chat Web App', descr: 'Chat application written with Node.js, Express, and MongoDB. Features include persistent message storage, private and general chat rooms, and online/offline statuses.', date: 'July 2020', link: 'https://github.com/tituscsmith/socket-chat', button: 'Project Code'},
-{ image: "images/library.png", class: 'web', alt: "Book Image", title: 'Library Management Web App', descr: 'Implemented a library web application with MySQL and PHP. Features include search filtering, check-out/check-in system, user-control access, and additional admin privileges.', date: 'June 2020', link: 'https://github.com/tituscsmith/library', button: 'Project Code'},
+  { image: "images/CCTall.png", class: 'mobile', alt: "Calorie Crusher Image", title: 'Calorie Crusher Mobile App', descr: 'Created a fitness and meal tracking mobile app with React Native in tangent with an existing RESTful API. Users are able to set nutrition and activity goals, log meals, log activity sessions, and track daily progress to goals. Integrated accessibility features to support screen reader use.', date: 'Nov 2020', link: 'https://github.com/tituscsmith/calorie_crusher', button: 'Project Repo'},
+    { image: "images/CourseSearch.jpg", class: 'web', alt: "Course Scheduler Image", title: 'University Course Search Web App', descr: 'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model and conducted usability inspection with heuristic evaluation. Features include search filtering, ratings and recommendations, prerequisite checks, and more.', date: 'Oct 2020', link: 'https://github.com/tituscsmith/course_scheduler', button: 'Project Repo'},
+{ image: "images/chat.png", class: 'web', alt: "Chat Image", title: 'Socket.IO Chat Web App', descr: 'Chat application written with Node.js, Express, and MongoDB. Features include persistent message storage, private and general chat rooms, and online/offline statuses.', date: 'July 2020', link: 'https://github.com/tituscsmith/socket-chat', button: 'Project Repo'},
+{ image: "images/library.png", class: 'web', alt: "Book Image", title: 'Library Management Web App', descr: 'Implemented a library web application with MySQL and PHP. Features include search filtering, check-out/check-in system, user-control access, and additional admin privileges.', date: 'June 2020', link: 'https://github.com/tituscsmith/library', button: 'Project Repo'},
 { image: "images/weather.png", class: 'mobile', alt: "Weather Icon", title: 'Weather App (iOS)', descr: 'Weather app developed with SwiftUI and OpenWeatherMap API. Current, Daily, and Hourly Forecasts as well as options to change location and temperature scale.', date: 'June 2020', link: 'https://imgur.com/a/Tmk8SRa', button: 'Project Walkthrough'},
 { image: "images/MapReduceImageTalend.jpg", class: 'OS', alt: "MapReduce Image", title: 'MapReduce', descr: 'Partner Project for CS 537. Implemented the MapReduce programming model in C to calculate the word counts of 10mb of data in less than a second. Incorporated a Combiner function. Revised project individually to account for unused partitions.', date: 'May 2020', link: 'http://pages.cs.wisc.edu/~shivaram/cs537-sp20/p4a.html', button: 'Project Description'},
 { image: "images/covid.jpg", class: 'web', alt: "COVID-19 Image", title: 'COVID-19 Data Visualizer', descr: 'Pulled and visually represented COVID-19 Data with Google Charts and the COVID Tracking Project API. Able to view state and national data.', date: 'May 2020', link: 'https://tituscsmith.github.io/covid-19/visualizer.html', button: 'See Visualizer'},
@@ -28,7 +27,7 @@ $.each(cardData, function (i) {
         // }
 
         animation = "none";
-        var templateString = '<div style = "margin-right: 0px" class= "mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '><img src=' + cardData[i].image + ' class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body"><h5 class="card-title">' + cardData[i].title + '</h5>'+
+        var templateString = '<div class= "mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '><img src=' + cardData[i].image + ' class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body"><h5 class="card-title">' + cardData[i].title + '</h5>'+
        // '<p class="card-text" data-aos="fade-up">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between data-aos="fade-up">' +
        '<p class="card-text">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between">' +
 
@@ -58,8 +57,8 @@ function filterSelection(c) {
   for (i = 0; i < x.length; i++) {
 
     hideElement(x[i]);
-    console.log(x[i].className);
-    console.log(c);
+    // console.log(x[i].className);
+    // console.log(c);
     if (x[i].className.indexOf(c) > -1) showElement(x[i]);
   }
 }
