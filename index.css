@@ -43,7 +43,7 @@
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {display: block;}
     .site-footer {
-    background: #d6f5f5;
+    background: #d4f4ff;
     text-align: center;
     }
     h1 {
@@ -74,8 +74,9 @@
     font-size: 20px;
     font-family: "Times New Roman";
     }
-    h5{
-    font-family: "Perpetua";
+    h4{
+    font-family: "Times New Roman";
+
     }
     .button {
     transition-duration: 0.4s;
@@ -135,8 +136,9 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 2vmin;;
     display: inline-block;
+    font-family: "Times New Roman";
     }
 
     li a:hover {
@@ -171,7 +173,7 @@
     width: 33.33%;
     display: none; /* Hide columns by default */
   }
-  
+
   /* Clear floats after rows */
   .row:after {
     content: "";
