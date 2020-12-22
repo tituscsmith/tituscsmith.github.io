@@ -100,23 +100,12 @@
     background-color:#bfbfbf;
     }
 
-    img.profile {
-    display: flex;
-    border-radius: 50px;
-    }
     .column-a{
     margin-right: .5%;
     margin-left: .5%;
     width: 32%;
     }
-    .responsive-a {
-    width: 100%;
-    height: auto;
-    }
-
-    .responsive-button {
-    font-size: 4vmin;
-    }
+ 
     /* From W3Schools */
     ul {
     list-style-type: none;
