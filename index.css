@@ -65,38 +65,21 @@
                 transform: none;
         }
     }
- 
-    h2 {
-    text-align: center;
-    font-family: "Perpetua";
-    font-size: 50px;
-    }
     small{
-    font-size: 20px;
     font-family: "Times New Roman";
     }
+ 
     h4{
     font-family: "Times New Roman";
-
     }
     .button {
     transition-duration: 0.4s;
     border-radius: 4px;
     color: grey;
-    font-size: 14px;
     border-width: thin;
+    font-size: 1.35vh;
+    }
 
-    }
-    .button-b {
-    transition-duration: 0.4s;
-    border-radius: 15px;
-    background-color: transparent;
-    color: black;
-    font-family: "Perpetua";
-    border-color: black;
-    font-size: 35px;
-    border-width: thin medium thick;
-    }
     .button:hover{
     background-color:#bfbfbf;
     }
@@ -127,7 +110,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 2vmin;;
+    font-size: 2vmin;
     display: inline-block;
     font-family: "Times New Roman";
     }
