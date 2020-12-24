@@ -29,7 +29,7 @@ $.each(cardData, function (i) {
         // }
 
         animation = "none";
-        var templateString = '<div class= "m-2 card proj ' + cardData[i].class + ' " data-aos=' + animation + '><img src=' + cardData[i].image + ' class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body"><h4 class="card-title" style = "font-size: 1.5vmin">' + cardData[i].title + '</h4>'+
+        var templateString = '<div class= "mx-4 mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '><img src=' + cardData[i].image + ' class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body"><h4 class="card-title" style = "font-size: 1.5vmin">' + cardData[i].title + '</h4>'+
        // '<p class="card-text" data-aos="fade-up">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between data-aos="fade-up">' +
        '<p class="card-text" style = "font-size: 1vmin">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between">' +
 
