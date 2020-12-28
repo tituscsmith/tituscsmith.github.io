@@ -114,7 +114,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 2vmin;
+    font-size: 3vmin;
     display: inline-block;
     /* font-family: "Times New Roman"; */
     font-family: "Poppins", Arial, sans-serif;
@@ -245,7 +245,7 @@ html {
 hr.solid {
   border-top: 0.5vh solid black;
 }
-/* Dotted border */
+/* Dotted border
 hr.dotted {
   border-top: 3px dotted black;
-}
+} */
