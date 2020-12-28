@@ -175,6 +175,8 @@
     background-color: white;
     cursor: pointer;
     border-color: black;
+    /* font-family: 'Perpetua', */
+    
   }
   
   /* Add a grey background color on mouse-over */
@@ -198,4 +200,35 @@
 }
 .colorful:hover {
     color: goldenrod;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 10s infinite;
+   -moz-animation: flickerAnimation 10s infinite;
+   -o-animation: flickerAnimation 10s infinite;
+    animation: flickerAnimation 10s infinite;
+}
+p{
+  font-size: 2vh;
+  font-family: "Poppins", Arial, sans-serif;
 }
