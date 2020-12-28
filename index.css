@@ -199,7 +199,7 @@
     transition: color 1s; /* For modern browsers */
 }
 .colorful:hover {
-    color: goldenrod;
+    color: #33a0ff;
 }
 
 @keyframes flickerAnimation {
@@ -234,4 +234,13 @@ p{
 }
 html {
   scroll-behavior: smooth;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 0.5vh solid black;
+}
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted black;
 }

@@ -31,21 +31,41 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    </head>
 
-   <body style="background-color:#33a0ff;">
-            <!--Navbar -->
+   <body style="background-color:#f5faff;">
+    <nav class=" navbar navbar-expand-lg  py-lg-0 "> 
+        <em class = "animate-flicker" style = "font-size: 2vh">console.log("Greetings, Hiring Manager!")</em>
 
-    <!-- <ul style = " margin-bottom: 0px;">
-        <li><a href="https://docs.google.com/document/d/1eU7Z1PqVDhAL0l7_9aSL1Yszfhb4wv-NcOw622R6BFY/edit?usp=sharing target="><img src="https://img.icons8.com/ios-filled/50/000000/open-resume.png"/></a></li>
-        <li><a href="https://www.linkedin.com/in/titus-smith-827534193/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"/></a></li>
-        <li><a href="mailto:tsmith42@wisc.edu"><img src="https://img.icons8.com/ios/50/000000/email-open.png"/></a></li>
-      </ul> -->
+          
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" 
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+        </button> 
+  
+        <div class="collapse navbar-collapse"
+                id="navbarResponsive"> 
+            <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item active"> 
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a> 
+                </li> 
+                <li class="nav-item"> 
+                  <a class="nav-link" href="https://docs.google.com/document/d/1eU7Z1PqVDhAL0l7_9aSL1Yszfhb4wv-NcOw622R6BFY/edit?usp=sharing target=">Resume</a> 
+              </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#projdata">Portfolio</a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#contact-section">Contact</a> 
+                </li> 
+            </ul> 
+        </div> 
+    </nav> 
 
     <!-- Profile Jumbatron -->
     <section class="jumbotron full-height mb-0" style="background-color:#f5faff; align-items: center; width: 100%; padding: 0 0 0 0">
-
-          <em class = "animate-flicker" style = "font-size: 2vh">console.log("Greetings, Hiring Manager!")</em>
-
-           
               <p class = "animate-pop-in mb-0 text-center" >My name is</p>
               <h1 class = "animate-pop-in colorful" style = "font-size: 12vh; text-align: center"><strong>Titus Smith</strong></h1>
               <div class = "text-center"><img class="animate-pop-in" style = "width: 40vmin;
@@ -53,55 +73,58 @@
               </div>
               <p class = "animate-pop=in text-center"><br>I am a New-Grad <strong class = "colorful" style = "display:inline">Developer</strong>  with experiences in designing and implementing user interfaces and databases.<br><a href="#experience">Scroll Down</a></p>
             </section>
-         <section class="jumbotron" id = "experience" style="background-color:#f5faff; width: 100%; padding: 0 0 0 0">
 
-          <em class = "animate-flicker" style = "font-size: 2vh">console.log("I am currently... ")</em>
+            <em class = "animate-flicker" style = "font-size: 2vh; text-indent: 20px;">     console.log("I am currently... ")</em>
+         <section class="jumbotron" id = "experience" style="background-color:#33a0ff; width: 100%; padding: 0 0 0 0">
+          <hr class="solid">
+
               <p class = "animate-pop-in mb-0 text-center" >An Undergraduate Research Assistant in the Human-Computer Interaction Lab at the University of Wisconsin-Madison.<br>
-                This research is part of the NASA ULI Effective Human-Robot Teaming to Advance Aviation Manufacturing project. 
+                This research is part of the <a style = "color: white" href="https://techport.nasa.gov/view/96115">NASA ULI Effective Human-Robot Teaming to Advance Aviation Manufacturing project.</a>
                 I am designing and implementing a new GUI that facilitates the authoring of high-level robot behaviors. 
                 The goal of this interface is to enable end-users to design trigger-behavior programs for in-situ and immediate tasks. 
-                I am working with <a href="https://emmanuel-senft.github.io/index.html">Emmanuel Senft</a>, Post-Doc.
+                I am working with <a style = "color: white" href="https://emmanuel-senft.github.io/index.html">Emmanuel Senft,</a> Post-Doc.
               </p>
+          <hr class="solid">
            
          </section>
    <!-- Project Buttons -->
-   <em class = "animate-flicker" style = "font-size: 2vh">console.log("Some of my project work includes... ")</em>
-   <div id="TabContainer" data-aos="fade-up" style = "text-align: center; justify-content: center;">
+   <!-- <div id="TabContainer" data-aos="fade-up" style = "text-align: center; justify-content: center;">
       <button class="btn active" onclick="filterSelection('all')" style = "font-size: 2.5vh;"> All Projects</button>
       <button class="btn" onclick="filterSelection('web')" style = "font-size: 2.5vh;"> Web Apps</button>
       <button class="btn" onclick="filterSelection('mobile')" style = "font-size: 2.5vh;"> Mobile Apps</button>
       <button class="btn" onclick="filterSelection('OS')" style = "font-size: 2.5vh"> Systems</button>
-      <!-- <button class="btn" onclick="filterSelection('ai')" style = "font-size: 1.75vh;"> A.I.</button> -->
-  </div>        
+  </div>         -->
 
      <!-- Project Cards-->
-    <div class="container-fluid">          
+     <em class = "animate-flicker" style = "font-size: 2vh">console.log("Some of my project work includes... ")</em>
+
+    <div class="container-fluid" style = "background-color: #f5faff;">
+          
           <div class="row row-cols-1 row-cols-md-4 justify-content-center"  id="projdata">
          </div>    
     </div>
    
   </body>
   <!-- Profile Jumbatron -->
-  <section class="jumbotron" style="background-color:#f5faff; width: 100%; padding: 0 0 0 0">
-    <em class = "animate-flicker" style = "font-size: 2vh">console.log("Outside of my technical skills...")</em>
-
+  <em class = "animate-flicker" style = "font-size: 2vh">console.log("Outside of my technical skills...")</em>
+  <section class="jumbotron" style="background-color:#33a0ff; width: 100%; padding: 0 0 0 0">
+    <hr class="solid">
     <div class="container py-2">         
-   
-          <p  class = "animate-pop-in py-5" style="font-size:2vh; font-family: Perpetua;">
-            I have an array of non-technical leadership and communication experience from both the <a href="https://collegiate.navigators.org/badgernavs">Navigators</a>, a campus student ministry, and <a href="https://iawah.com/">Camp IAWAH</a>, a local outdoor activity camp where I have held various leadership positions the past four summers. Please contact me if you are interested in interviewing me for this position.
+          <p  class = "animate-pop-in py-5">
+            I have an array of non-technical leadership and communication experience from both the <a style = "color: white" href="https://collegiate.navigators.org/badgernavs">Navigators</a>, a campus student ministry, and <a style = "color: white" href="https://iawah.com/">Camp IAWAH</a>, a local outdoor activity camp where I have held various positions the past four summers.
           </p>
         <div class="card">
           <h5 class="card-header">CREW Leader | SUMMER 2019</h5>
-          <div class="card-body">
+          <div class="card-body shadow">
             <p class="card-text">❖In a team of four staff, facilitated three-week, service-based, leadership programs for sixteen 14-15 year olds, supervising cleaning and dishwashing shifts, while creating opportunities for learning and growth
               <br>❖Provided one-on-one mentorship to the males in the programs
               </p>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card my-4">
           <h5 class="card-header">Co-Head of Ski & Board | SUMMER 2018</h5>
-          <div class="card-body">
+          <div class="card-body shadow">
             <p class="card-text">❖Provided initial and ongoing training to sixteen Ski & Board staff, teaching the driving of tow boats, emergency procedures, and the instruction of all water sports
               <br>❖Supervised all Ski & Board participants & staff to facilitate a safe, fun and challenging environment<br>
               ❖Delivered boat maintenance, weekly cleanings, oil changes, fueling and the upkeep of the activity
@@ -110,10 +133,12 @@
           </div>
         </div>
       </div>
+      <hr class="solid">
      </section>  
+
     
 
-     <section id="contact-section" style = "background-color:#f5faff; width: 100%; padding: 0 0 0 0">
+     <section id="contact-section" style = "width: 100%; padding: 0 0 0 0">
       <em class = "animate-flicker" style = "font-size: 2vh">console.log("Please contact me if you'd be interested in interviewing me.")</em>
 
       <div class="container">
@@ -139,7 +164,7 @@
           	<div class="align-self-stretch box text-center p-4 shadow">
           		<div>
                 <h3 class="mb-4">Email</h3>
-                <p>tsmith42@wisc.edu</p>
+		            <p><a href="mailto:tsmith42@wisc.edu">tsmith42@wisc.edu</a></p>
 		          </div>
 	          </div>
           </div>
@@ -152,13 +177,18 @@
 	          </div>
           </div>
         </div>
-        
     </section>
-<section class="jumbotron" style="background-color:#f5faff; width: 100%; padding: 0 0 0 0">
+    <hr class="solid">
 
- </section>
+  
 
-  <!-- Dropdown Menu -->
+  <!-- Footer -->
+  <footer class="site-footer">
+  <div id="footer-content"> 
+    <em>* Indicates a project in a course where the instructor has requested code remains private. Please contact me if you'd like to access the code!</em>
+    <p><br>Version 1.4.1<br>December 2020</p>
+
+    <!-- Dropdown Menu -->
   <div class="dropdown" data-aos="flip-up">
     <button class="dropbtn">Image Sources</button>
     <div class="dropdown-content">
@@ -179,12 +209,6 @@
       <a href="https://icons8.com/icons/">Icon Package for Navbar</a>
     </div>
 </div>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-  <div id="footer-content"> 
-    <em>* Indicates a project in a course where the instructor has requested code remains private. Please contact me if you'd like to access the code!</em>
-    <p><br>Version 1.4.1<br>December 2020</p>
   </div>
 </footer>
 </html>
