@@ -568,7 +568,7 @@ function drawNationalChart() {
                  // Instantiate and draw our chart, passing in some options.
                   var options = {region: 'US', displayMode: 'regions', resolution: 'provinces',
                   colorAxis: {
-                    maxValue: 500000,
+                    maxValue: 1000000,
                       colors: ['#ffe6e6', '#990000']}, // orange to bluez},
                 titleTextStyle: {
                       fontSize: 30,
