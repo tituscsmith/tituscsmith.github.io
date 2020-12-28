@@ -233,6 +233,12 @@
    -o-animation: flickerAnimation 10s infinite;
     animation: flickerAnimation 10s infinite;
 }
+.animate-arrow{
+  -webkit-animation: flickerAnimation 3s infinite;
+  -moz-animation: flickerAnimation 3s infinite;
+  -o-animation: flickerAnimation 3s infinite;
+   animation: flickerAnimation 3s infinite;
+}
 p{
   font-size: 2vh;
   font-family: "Poppins", Arial, sans-serif;
