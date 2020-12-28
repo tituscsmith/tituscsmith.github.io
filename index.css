@@ -4,7 +4,7 @@
 }
 /* Dropdown content is from w3 schools*/
 .dropbtn {
-    background-color: goldenrod;
+    background-color: #33a0ff;
     color: white;
     text-align:center;
     padding: 16px;
@@ -51,7 +51,10 @@
     font-family: "Perpetua";
     font-size: 100px;
     }
+    h4{
+      font-family: "Poppins", Arial, sans-serif;
 
+    }
     .animate-pop-in {
     animation: pop-in 2s ease-out forwards;
     }
@@ -66,18 +69,18 @@
         }
     }
     small{
-    font-family: "Times New Roman";
+      font-family: "Poppins", Arial, sans-serif;
+
     }
- 
-    h4{
-    font-family: "Times New Roman";
-    }
+
     .button {
     transition-duration: 0.4s;
     border-radius: 4px;
     color: grey;
     border-width: thin;
     font-size: 1.35vh;
+    font-family: "Poppins", Arial, sans-serif;
+
     }
 
     .button:hover{
@@ -113,7 +116,9 @@
     text-decoration: none;
     font-size: 2vmin;
     display: inline-block;
-    font-family: "Times New Roman";
+    /* font-family: "Times New Roman"; */
+    font-family: "Poppins", Arial, sans-serif;
+
     }
 
     li a:hover {
@@ -186,7 +191,7 @@
   
   /* Add a dark background color to the active button */
   .btn.active {
-    background-color: goldenrod;
+    background-color: #33a0ff;
      color: white;
      border-color: black;
 
