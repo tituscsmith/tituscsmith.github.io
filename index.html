@@ -20,7 +20,8 @@
             <meta property="og:type" content="website" />
             <link rel="stylesheet" type="text/css" href="index.css">
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+            <script src="https://use.fontawesome.com/fee3e9fb7a.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
             <script src = "index.js" defer></script>
@@ -33,11 +34,11 @@
    <body style="background-color:#33a0ff;">
             <!--Navbar -->
 
-    <ul style = " margin-bottom: 0px;">
+    <!-- <ul style = " margin-bottom: 0px;">
         <li><a href="https://docs.google.com/document/d/1eU7Z1PqVDhAL0l7_9aSL1Yszfhb4wv-NcOw622R6BFY/edit?usp=sharing target="><img src="https://img.icons8.com/ios-filled/50/000000/open-resume.png"/></a></li>
-        <li><a href="https://www.linkedin.com/in/titus-smith-827534193/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"/></div></a></li>
+        <li><a href="https://www.linkedin.com/in/titus-smith-827534193/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"/></a></li>
         <li><a href="mailto:tsmith42@wisc.edu"><img src="https://img.icons8.com/ios/50/000000/email-open.png"/></a></li>
-      </ul>
+      </ul> -->
 
     <!-- Profile Jumbatron -->
     <section class="jumbotron" style="background-color:#f5faff; width: 100%; padding: 0 0 0 0">
@@ -47,14 +48,26 @@
            
               <p class = "animate-pop-in mb-0 text-center" style="font-size:3vh; font-family: Perpetua;" >My name is</p>
               <h1 class = "animate-pop-in colorful" style = "font-size: 12vh; text-align: center"><strong>Titus Smith</strong></h1>
-              <p class = "animate-pop=in text-center" style = "">I am a New-Grad Developer actively looking for <strong class = "colorful" style = "display:inline">Entry-Level Developer</strong> positions. <strong class = "colorful">Scroll down</strong> to see
-                what I've been creating this past year!</p>
-            
-              <!-- <p class = "animate-pop-in" style="font-size:4vh; font-family: Perpetua;" >Welcome to my portfolio!</p> -->
+              <div class = "text-center"><img class="animate-pop-in" style = "width: 40vmin;
+                height: auto;border-radius: 50px;"src="images/Titus.png" alt="Picture of Titus"></a>
+              </div>
+              <p class = "animate-pop=in text-center" style = "">I am a New-Grad <strong class = "colorful" style = "display:inline">Developer</strong>  with experiences in designing and implementing user interfaces and databases.</p>
          </section>
-     
+         <section class="jumbotron" style="background-color:#f5faff; width: 100%; padding: 0 0 0 0">
+
+          <em class = "animate-flicker" style = "font-size: 2vh">console.log("I am currently... ")</em>
+
+           
+              <p class = "animate-pop-in mb-0 text-center" style="font-size:2vh; font-family: Perpetua;" >An Undergraduate Research Assistant in the Human-Computer Interaction Lab at the University of Wisconsin-Madison.<br>
+                This research is part of the NASA ULI Effective Human-Robot Teaming to Advance Aviation Manufacturing project. 
+                I am designing and implementing a new GUI that facilitates the authoring of high-level robot behaviors. 
+                The goal of this interface is to enable end-users to design trigger-behavior programs for in-situ and immediate tasks. 
+                I am working with <a href="https://emmanuel-senft.github.io/index.html">Emmanuel Senft</a>, Post-Doc.
+              </p>
+           
+         </section>
    <!-- Project Buttons -->
-   <em class = "animate-flicker" style = "font-size: 2vh">console.log("Some of my project work includes:")</em>
+   <em class = "animate-flicker" style = "font-size: 2vh">console.log("Some of my project work includes... ")</em>
    <div id="TabContainer" data-aos="fade-up" style = "text-align: center; justify-content: center;">
       <button class="btn active" onclick="filterSelection('all')" style = "font-size: 2.5vh;"> All Projects</button>
       <button class="btn" onclick="filterSelection('web')" style = "font-size: 2.5vh;"> Web Apps</button>
@@ -64,13 +77,8 @@
   </div>        
 
      <!-- Project Cards-->
-    <div class="container-fluid">
-          <!-- <a id="projects" style=" position: relative;top: -60px;display: block;height: 0;overflow: hidden;"></a> -->
-          
-          <!-- <h1 data-aos="fade-up">Projects</h1> -->
+    <div class="container-fluid">          
           <div class="row row-cols-1 row-cols-md-4 justify-content-center"  id="projdata">
-            <!-- <div class="row justify-content-center"  id="projdata"> -->
-
          </div>    
     </div>
    
@@ -80,28 +88,83 @@
     <em class = "animate-flicker" style = "font-size: 2vh">console.log("Outside of my technical skills...")</em>
 
     <div class="container py-2">         
-      <!-- <div class = "row"> -->
-        <!-- <div class="col-sm-6"> -->
-          <!-- <p class = "animate-pop-in" style="font-size:4vh; font-family: Perpetua;" >Welcome to my portfolio!</p> -->
-          <p  class = "animate-pop-in" style="font-size:2vh; font-family: Perpetua;">
+   
+          <p  class = "animate-pop-in py-5" style="font-size:2vh; font-family: Perpetua;">
             I have an array of non-technical leadership and communication experience from both the <a href="https://collegiate.navigators.org/badgernavs">Navigators</a>, a campus student ministry, and <a href="https://iawah.com/">Camp IAWAH</a>, a local outdoor activity camp where I have held various leadership positions the past four summers. Please contact me if you are interested in interviewing me for this position.
           </p>
-        <!-- </div> -->
+        <div class="card">
+          <h5 class="card-header">CREW Leader | SUMMER 2019</h5>
+          <div class="card-body">
+            <p class="card-text">❖In a team of four staff, facilitated three-week, service-based, leadership programs for sixteen 14-15 year olds, supervising cleaning and dishwashing shifts, while creating opportunities for learning and growth
+              <br>❖Provided one-on-one mentorship to the males in the programs
+              </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="card-header">Co-Head of Ski & Board | SUMMER 2018</h5>
+          <div class="card-body">
+            <p class="card-text">❖Provided initial and ongoing training to sixteen Ski & Board staff, teaching the driving of tow boats, emergency procedures, and the instruction of all water sports
+              <br>❖Supervised all Ski & Board participants & staff to facilitate a safe, fun and challenging environment<br>
+              ❖Delivered boat maintenance, weekly cleanings, oil changes, fueling and the upkeep of the activity
+      
+              </p>
+          </div>
+        </div>
       </div>
      </section>  
     
 
-   <!-- Dropdown Menu -->
-   <div class="dropdown" data-aos="flip-up">
+  
+<section class="jumbotron" style="background-color:#f5faff; width: 100%; padding: 0 0 0 0">
+
+  <em class = "animate-flicker" style = "font-size: 2vh">console.log("Please contact me if you'd be interested in interviewing me.")</em>
+
+    <div class="row d-flex contact-info mb-5">
+      <div class="col-md-6 col-lg-3 d-flex ">
+        <div class="align-self-stretch box text-center p-4 shadow">
+            <h3 class="mb-4">Location</h3>
+            <p>Ottawa, Ontario</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="align-self-stretch box text-center p-4 shadow">
+            <h3 class="mb-4">Resume</h3>
+            <p><a href="https://docs.google.com/document/d/1eU7Z1PqVDhAL0l7_9aSL1Yszfhb4wv-NcOw622R6BFY/edit?usp=sharing target="><img src="https://img.icons8.com/ios-filled/50/000000/open-resume.png"/></a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3 d-flex">
+        <div class="align-self-stretch box text-center p-4 shadow">
+            <h3 class="mb-4">LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/titus-smith-827534193/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"/></a>          </div>
+      </div>
+      <div class="col-md-3 col-lg-3 d-flex">
+        <div class="align-self-stretch box text-center p-4 shadow">
+            <h3 class="mb-4">Email</h3>
+            <p>tsmith42@wisc.edu</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="align-self-stretch box text-center p-4 shadow">
+            <h3 class="mb-4">GitHub</h3>
+            <p><a href="https://www.github.com/tituscsmith">github.com/tituscsmith</a></p>
+        </div>
+      </div>
+    </div>
+   
+ </section>
+
+  <!-- Dropdown Menu -->
+  <div class="dropdown" data-aos="flip-up">
     <button class="dropbtn">Image Sources</button>
     <div class="dropdown-content">
       <a href="https://www.lynda.com/Google-Search-tutorials/301001-0.html">Course Search Image</a>
       <a href="https://martech.zone/ecommerce-virtual-shopping-assistant/">Shopping Assistant Image</a>
-      <a href="https://www.vectorstock.com/royalty-free-vector/concept-online-chat-man-and-woman-vector-26235809">Chat App Image</a>
+      <!-- <a href="https://www.vectorstock.com/royalty-free-vector/concept-online-chat-man-and-woman-vector-26235809">Chat App Image</a> -->
       <a href="https://iconarchive.com/show/free-multimedia-icons-by-designbolts/Film-icon.html">Movie Icon</a>
       <a href="https://pngio.com/images/png-a1240526.html">Library Image</a>
       <!-- <a href="https://ar.pinterest.com/pin/324048135690518165/">Weather Image</a> -->
-      <a href="https://www.minot.af.mil/News/Article-Display/Article/2109607/presumptive-confirmed-covid-19-case-in-ward-county/">COVID-19 Image</a>
+      <!-- <a href="https://www.minot.af.mil/News/Article-Display/Article/2109607/presumptive-confirmed-covid-19-case-in-ward-county/">COVID-19 Image</a> -->
       <a href="https://www.talend.com/resources/what-is-mapreduce/">MapReduce Image</a>
       <!-- <a href="http://e2fsprogs.sourceforge.net/ext2intro.html">Inode Image</a> -->
       <a href="https://macreports.com/how-to-use-terminal-on-mac-basic-commands">Terminal Logo</a>
@@ -112,7 +175,6 @@
       <a href="https://icons8.com/icons/">Icon Package for Navbar</a>
     </div>
 </div>
-<p><br></p>
 
   <!-- Footer -->
   <footer class="site-footer">
