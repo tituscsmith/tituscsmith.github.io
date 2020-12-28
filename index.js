@@ -39,9 +39,12 @@ $.each(cardData, function (i) {
         templateString += '</div></div></div>';                 
         // console.log(templateString);
         $('#projdata').append(templateString);});
-
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        $('#date').append("console.log(\"" + new Date().toLocaleDateString(undefined, options) + "");
         
 $("#projdata").on("click", function () {});
+$("#date").on("click", function () {});
+
 // });
 
 //Partiall inspired by:
@@ -86,3 +89,4 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
