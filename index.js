@@ -1,6 +1,7 @@
 AOS.init({
   mirror: true, // whether elements should animate out while scrolling past the
   once: false, // whether animation should happen only once - while scrolling down
+  duration: 300, // values from 0 to 3000, with step 50ms
 
 });
 
