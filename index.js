@@ -30,7 +30,7 @@ $.each(cardData, function (i) {
 
         animation = "none";
         var templateString = '<div class= "mx-4 mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '><img src=' + cardData[i].image + ' class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body shadow"><h4 class="card-title" style = "font-size: 1.75vh">' + cardData[i].title + '</h4>'+
-       '<p class="card-text" style = "font-size: 1.35vh">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between">' +
+       '<p class="card-text" style = "font-size: 1.6vh">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between">' +
        '<small class="text-muted">' + cardData[i].date + '</small>';
         if(cardData[i].button){
         templateString += '<a href=' + cardData[i].link + ' target="_blank"><button class="button">' + cardData[i].button + '</button></a>'
