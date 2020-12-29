@@ -217,7 +217,7 @@
     color: #33a0ff;
 }
 
-@keyframes flickerAnimation {
+/* @keyframes flickerAnimation {
   0%   { opacity:0; }
   50%  { opacity:1; }
   100% { opacity:0; }
@@ -242,7 +242,7 @@
    -moz-animation: flickerAnimation 7s infinite;
    -o-animation: flickerAnimation 7s infinite;
     animation: flickerAnimation 7s infinite;
-}
+} */
 .animate-arrow{
   -webkit-animation: flickerAnimation 3s infinite;
   -moz-animation: flickerAnimation 3s infinite;
@@ -270,9 +270,3 @@ hr.dotted {
   font-size: 2.5vh !important;
   color: #33a0ff;
 }
-/* div.absolute {
-  position: absolute;
-  bottom: 10px;
-  width: 50%;
-  border: 3px solid #8AC007;
-} */
