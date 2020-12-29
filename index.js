@@ -1,6 +1,9 @@
 AOS.init({
   mirror: true, // whether elements should animate out while scrolling past the
+  once: false, // whether animation should happen only once - while scrolling down
+
 });
+
 var cardData = [
   { image: "images/CCTall.png", class: 'mobile', alt: "Calorie Crusher Image", title: 'Calorie Crusher Mobile App', descr: 'A fitness and meal tracking mobile app created with React Native in tangent with an existing RESTful API. Users are able to set nutrition and activity goals, log meals, log activity sessions, and track daily progress to goals. Integrated accessibility features to support screen reader use.', date: 'Nov 2020', link: 'https://github.com/tituscsmith/calorie_crusher', button: 'Project Repo'},
   { image: "images/shoppingassistant.jpeg", class: 'other', alt: "Dialogflow Agent Image", title: 'Dialogflow Shopping Assistant', descr: 'A dialogue-based interface that assists users of an online fictional store that works in tangent with an existing web app and API. Agent includes support for users with cart and inventory queries, item filtering, navigating the pages of the web app, and purchasing items. Implemented the Dialogflow Webook with Javascript.', date: 'Nov 2020', link: 'https://github.com/tituscsmith/WiscShopDialogflow', button: 'Project Repo'}, 
@@ -21,7 +24,7 @@ $.each(cardData, function (i) {
         // }
 
         animation = "none";
-        var templateString = '<div class= "mx-4 mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '><img src=' + cardData[i].image + ' height = "200px" width = "300px" class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body shadow"><h4 class="card-title" style = "font-size: 1.75vh">' + cardData[i].title + '</h4>'+
+        var templateString = '<div class= "mx-4 mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '><img src=' + cardData[i].image + ' height = "250px" width = "300px" class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body shadow"><h4 class="card-title" style = "font-size: 1.75vh">' + cardData[i].title + '</h4>'+
        '<p class="card-text" style = "font-size: 1.6vh">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between">' +
        '<small class="text-muted">' + cardData[i].date + '</small>';
         if(cardData[i].button){
