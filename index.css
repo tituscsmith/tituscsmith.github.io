@@ -217,7 +217,7 @@
     color: #33a0ff;
 }
 
-/* @keyframes flickerAnimation {
+ @keyframes flickerAnimation {
   0%   { opacity:0; }
   50%  { opacity:1; }
   100% { opacity:0; }
@@ -237,12 +237,12 @@
   50%  { opacity:1; }
   100% { opacity:0; }
 }
-.animate-flicker {
+/* .animate-flicker {
    -webkit-animation: flickerAnimation 7s infinite;
    -moz-animation: flickerAnimation 7s infinite;
    -o-animation: flickerAnimation 7s infinite;
     animation: flickerAnimation 7s infinite;
-} */
+} */ */
 .animate-arrow{
   -webkit-animation: flickerAnimation 3s infinite;
   -moz-animation: flickerAnimation 3s infinite;
