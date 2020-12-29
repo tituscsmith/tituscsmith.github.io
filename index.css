@@ -238,10 +238,10 @@
   100% { opacity:0; }
 }
 .animate-flicker {
-   -webkit-animation: flickerAnimation 10s infinite;
-   -moz-animation: flickerAnimation 10s infinite;
-   -o-animation: flickerAnimation 10s infinite;
-    animation: flickerAnimation 10s infinite;
+   -webkit-animation: flickerAnimation 7s infinite;
+   -moz-animation: flickerAnimation 7s infinite;
+   -o-animation: flickerAnimation 7s infinite;
+    animation: flickerAnimation 7s infinite;
 }
 .animate-arrow{
   -webkit-animation: flickerAnimation 3s infinite;
