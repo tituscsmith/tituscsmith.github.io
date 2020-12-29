@@ -2,46 +2,56 @@
   .full-height {
     height: 100%;
 }
-/* Dropdown content is from w3 schools*/
+/* Dropup Button */
 .dropbtn {
-    background-color: #33a0ff;
-    color: white;
-    text-align:center;
-    padding: 16px;
-    font-size: 16px;
-    border-color: black;
-    border-width: thin;
-    }
-    
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
-    text-align:center;
-    position: relative;
-    }
+  background-color:  #33a0ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-    display: none;
-    text-align:center;
-    background-color: #f5faff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    }
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: inline-block;
+}
 
-    /* Links inside the dropdown */
-    .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    }
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #ddd;}
+/* Links inside the dropup */
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {display: block;}
+/* Change color of dropup links on hover */
+.dropup-content a:hover {background-color: #ddd}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
+}
+/* #navbarNavDropdown a {
+  border-bottom: 1px solid black;
+} */
+
     .site-footer {
     background: #f5faff;
     text-align: center;
