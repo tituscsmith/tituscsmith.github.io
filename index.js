@@ -40,7 +40,7 @@ $.each(cardData, function (i) {
         // console.log(templateString);
         $('#projdata').append(templateString);});
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        $('#date').append("console.log(\"" + new Date().toLocaleDateString(undefined, options) + "");
+        $('#date').append("console.log(\"" + new Date().toLocaleDateString(undefined, options) + "\")");
         
 $("#projdata").on("click", function () {});
 $("#date").on("click", function () {});
