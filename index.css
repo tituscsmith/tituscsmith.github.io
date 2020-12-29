@@ -265,3 +265,6 @@ hr.solid {
 hr.dotted {
   border-top: 3px dotted black;
 } */
+.cover-letter{
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace !important;
+}
