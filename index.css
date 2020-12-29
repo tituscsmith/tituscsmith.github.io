@@ -242,7 +242,7 @@
    -moz-animation: flickerAnimation 7s infinite;
    -o-animation: flickerAnimation 7s infinite;
     animation: flickerAnimation 7s infinite;
-} */ */
+} */
 .animate-arrow{
   -webkit-animation: flickerAnimation 3s infinite;
   -moz-animation: flickerAnimation 3s infinite;
