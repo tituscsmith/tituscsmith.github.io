@@ -6,6 +6,7 @@
 /* helps with overflow on mobile */
 .mhelp{
   overflow-y: auto;
+  position: relative;
 }
 .navbar{
   background-color: #f5faff;;
