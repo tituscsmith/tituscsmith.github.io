@@ -5,7 +5,7 @@ AOS.init({
   offset: 100
 });
 var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1000
+	speed: 500
 });
 
 $("body").css({'padding-top': $('nav.navbar').innerHeight()});
