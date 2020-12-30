@@ -17,7 +17,7 @@ $('a[href="#educationmessage"]').on('click',function(e){
   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
   if (target.length) {
     $('html,body').animate({
-        scrollTop: target.offset().top - $('nav.navbar').innerHeight()
+        scrollTop: target.offset().top - $('nav.navbar').innerHeight() - 100
    }, 1000);
    return false;
   }
@@ -30,7 +30,7 @@ $('a[href="#contact-section"]').on('click',function(e){
     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
     if (target.length) {
       $('html,body').animate({
-          scrollTop: target.offset().top - $('nav.navbar').innerHeight()
+          scrollTop: target.offset().top - $('nav.navbar').innerHeight() - 100
      }, 1000);
      return false;
     }
@@ -43,7 +43,7 @@ $('a[href="#projmessage"]').on('click',function(e){
   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
   if (target.length) {
     $('html,body').animate({
-        scrollTop: target.offset().top - $('nav.navbar').innerHeight()
+        scrollTop: target.offset().top - $('nav.navbar').innerHeight() - 100
    }, 1000);
    return false;
   }
