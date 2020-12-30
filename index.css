@@ -2,6 +2,11 @@
   .full-height {
     height: 100%;
 }
+/* body { padding-top: 25vh; 
+} */
+.navbar{
+  background-color: #f5faff;;
+}
 /* Dropup Button */
 .dropbtn {
   background-color:  #33a0ff;

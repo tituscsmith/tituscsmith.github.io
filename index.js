@@ -7,6 +7,18 @@ AOS.init({
 var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 1000
 });
+// console.log($('nav.navbar').height());
+// console.log($('nav.navbar').innerHeight());
+
+$("body").css({'padding-top': $('nav.navbar').innerHeight()});
+// $("body").css({'padding-top': $('nav.navbar').height()});
+
+
+// console.log("Height" + document.getElementById('experiencemessage').innerHTML);
+
+// document.getElementsByTagName("BODY")[0].style.paddingTop = '50px';
+
+// document.getElementsByTagName("BODY")[0].style.paddingTop = document.getElementById('mainnav').style.height;
 
 var cardData = [
   { image: "images/CCTall.png", class: 'mobile', alt: "Calorie Crusher Image", title: 'Calorie Crusher Mobile App', descr: 'A fitness and meal tracking mobile app created with React Native in tangent with an existing RESTful API. Users are able to set nutrition and activity goals, log meals, log activity sessions, and track daily progress to goals. Integrated accessibility features to support screen reader use.', date: 'Nov 2020', link: 'https://github.com/tituscsmith/calorie_crusher', button: 'Project Repo'},
@@ -41,8 +53,10 @@ $.each(cardData, function (i) {
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         $('#date').append("console.log(\"" + new Date().toLocaleDateString(undefined, options) + "\")");
         
-$("#projdata").on("click", function () {});
+$("#projdata").on("click", function () {
+});
 $("#date").on("click", function () {});
+
 
 // });
 
@@ -88,4 +102,3 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
