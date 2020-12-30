@@ -25,7 +25,7 @@
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-            <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+            <link type="text/css" href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
             <script src = "index.js" defer></script>
@@ -37,7 +37,7 @@
    
    <body style="background-color:#f5faff;">
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow py-2" id = "mainnav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow py-2 mhelp" id = "mainnav">
     <li class="nav-item active py-0"> 
       <a data-scroll  class="nav-link" href="#" ><strong>Titus's Portfolio</strong></a> 
     </li>  
@@ -63,7 +63,7 @@
   </nav>
 
     <!-- Profile Jumbatron -->
-    <section class="jumbotron full-height pt-4 mb-0" style="background-color:#f5faff; align-items: center; width: 100%; padding: 0 0 0 0">
+    <section class="jumbotron full-height pt-4 mb-0 mhelp" style="background-color:#f5faff; align-items: center; width: 100%; padding: 0 0 0 0">
       <div class = "pt-1 my-0" style = "text-indent: 1vw;" data-aos = "fade-right">     
         <em class = "cover-letter" id = "date"></em>
       </div>
@@ -86,8 +86,7 @@
             <em class = "cover-letter">console.log("I am currently... ")</em>
         </div>
     <!-- Education/Experience Section -->
-    <section class="jumbotron" id = "experience" style="background-color:#33a0ff; width: 100%; padding: 0 0 0 0">
-        <hr class="solid">
+    <section class="jumbotron borders mhelp" id = "experience" style="background-color:#33a0ff; width: 100%; padding: 0 0 0 0">
           <!-- Education -->
           <h3 class = "text-center">Studying at the <a style = "color: white" href="https://www.cs.wisc.edu">University of Wisconsin-Madison</a></h3>
           <h6 class = "mb-0 px-2 text-center" >
@@ -106,26 +105,27 @@
             The goal of this interface is to enable end-users to design trigger-behavior programs for in-situ and immediate tasks. 
             I am working with <a style = "color: white" href="https://emmanuel-senft.github.io/index.html">Emmanuel Senft,</a> Post-Doc.
           </p>
-
-        <hr class="solid">
     </section>
 
     <!-- Portfolio Section-->
-       <!-- Hiring Manager Message -->
-       <div data-aos = "fade-right" style = "text-indent: 1vw;" id = "projmessage">
+    <div class = "mhelp">
+      <!-- Hiring Manager Message -->
+      <div data-aos = "fade-right" style = "text-indent: 1vw;" id = "projmessage">
         <em class = "cover-letter">console.log("Some of my project work includes... ")</em>
        </div>
        <!-- Porfolio Cards -->
         <div class="container-fluid" style = "background-color: #f5faff;">
               <div class="row row-cols-1 row-cols-md-4 justify-content-center"  id="projdata" ></div>    
         </div>
+    </div>
+       
    
   <!-- Resume Section -->
     <!-- Hiring Manager Message -->
     <div data-aos = "fade-right" style = "text-indent: 1vw;">
       <em class = "cover-letter">console.log("Outside of my technical skills... ")</em>
     </div>
-  <section class="jumbotron" style="background-color:#33a0ff; width: 100%; padding: 0 0 0 0">
+  <section class="jumbotron mhelp" style="background-color:#33a0ff; width: 100%; padding: 0 0 0 0">
     <hr class="solid">
     <div class="container py-2">         
           <p  class = "py-5" style = "font-size: 3vh">
@@ -171,7 +171,7 @@
     </div>
 
     <!-- Contact Cards -->
-      <div class="container">
+      <div class="container mhelp">
         <div class="row contact-info mb-5">
           <div class="col-md-6 col-lg-3">
           	<div class="align-self-stretch box text-center p-4 shadow">
@@ -208,7 +208,7 @@
   </body>
 
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="site-footer mhelp">
   <div id="footer-content"> 
     <em>* Indicates a project in a course where the instructor has requested code remains private. Please contact me if you'd like to access the code!</em>
     <p><br>Version 1.4.3<br>December 2020</p>

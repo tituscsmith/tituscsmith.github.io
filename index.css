@@ -3,6 +3,10 @@
     height: 100%;
 }
 
+/* helps with overflow on mobile */
+.mhelp{
+  overflow-y: auto;
+}
 .navbar{
   background-color: #f5faff;;
 }
@@ -265,6 +269,12 @@ hr.solid {
  /* Dotted border */
 hr.dotted {
   border-top: 3px dotted black;
+}
+
+.borders{
+  border-top: 0.5vh solid black;
+  border-bottom: 0.5vh solid black;
+
 }
 .cover-letter{
   font-family: 'Menlo', 'Monaco', 'Courier New', monospace !important;
