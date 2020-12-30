@@ -43,30 +43,27 @@
    
    <body style="background-color:#f5faff;">
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow" id = "mainnav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow py-2" id = "mainnav">
 
 
-  <div data-aos = "fade-right">     
-    <em class = "cover-letter" id = "date"></em>
-    <em class = "cover-letter ">
-        <br>console.log("Greetings, Hiring Manager... ")
-    </em>
-  </div>
+  <li class="nav-item active py-0"> 
+    <a data-scroll  class="nav-link" href="#" ><strong>Titus's Website</strong></a> 
+</li> 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto"> 
-        <li class="nav-item active"> 
+        <li class="nav-item active py-0 px-2"> 
             <a data-scroll  class="nav-link" href="#">Home<span class="sr-only">(current)</span></a> 
         </li> 
-        <li class="nav-item"> 
+        <li class="nav-item py-0 px-2"> 
           <a class="nav-link" href="https://docs.google.com/document/d/1eU7Z1PqVDhAL0l7_9aSL1Yszfhb4wv-NcOw622R6BFY/edit?usp=sharing target=">Resume</a> 
       </li> 
-        <li class="nav-item"> 
+        <li class="nav-item py-0 px-2"> 
             <a data-scroll  class="nav-link" href="#projdata">Portfolio</a> 
         </li> 
-        <li class="nav-item"> 
+        <li class="nav-item py-0 px-2"> 
             <a data-scroll class="nav-link" href="#contact-section">Contact</a> 
         </li> 
     </ul> 
@@ -75,10 +72,16 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-
+ 
     <!-- Profile Jumbatron -->
-    <section class="jumbotron full-height mt-4 mb-0" style="background-color:#f5faff; align-items: center; width: 100%; padding: 0 0 0 0">
-              <p class = "mb-0 text-center" >My name is</p>
+    <section class="jumbotron full-height pt-4 mb-0" style="background-color:#f5faff; align-items: center; width: 100%; padding: 0 0 0 0">
+      <div class = "pt-2" data-aos = "fade-right">     
+        <em class = "cover-letter" id = "date"></em>
+        <em class = "cover-letter ">
+            <br>console.log("Greetings, Hiring Manager...")
+        </em>
+      </div>
+      <p class = "mb-0 mt-4 text-center" >My name is</p>
               <h1 class = "colorful" style = "font-size: 12vh; text-align: center"><strong>Titus Smith</strong></h1>
               <div class = "text-center"><img style = "width: 40vmin;
                 height: auto;border-radius: 50px;"src="images/Titus.png" alt="Picture of Titus"></a>

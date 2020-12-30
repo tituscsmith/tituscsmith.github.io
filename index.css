@@ -2,8 +2,7 @@
   .full-height {
     height: 100%;
 }
-/* body { padding-top: 25vh; 
-} */
+
 .navbar{
   background-color: #f5faff;;
 }
@@ -119,8 +118,7 @@
 
     li {
     display: inline;  
-    padding: 3vmin;
-    /* font-size: 3vw; */
+    padding: 3vh;
     }
 
     li a {
@@ -129,11 +127,9 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 3vmin;
+    font-size: 3vh;
     display: inline-block;
-    /* font-family: "Times New Roman"; */
     font-family: "Poppins", Arial, sans-serif;
-
     }
 
     li a:hover {
