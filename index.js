@@ -1,24 +1,53 @@
 AOS.init({
   mirror: true, // whether elements should animate out while scrolling past the
   once: false, // whether animation should happen only once - while scrolling down
-  duration: 300, // values from 0 to 3000, with step 50ms
+  duration: 200, // values from 0 to 3000, with step 50ms
 
 });
 var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 1000
 });
-// console.log($('nav.navbar').height());
-// console.log($('nav.navbar').innerHeight());
 
 $("body").css({'padding-top': $('nav.navbar').innerHeight()});
-// $("body").css({'padding-top': $('nav.navbar').height()});
-
-
-// console.log("Height" + document.getElementById('experiencemessage').innerHTML);
-
-// document.getElementsByTagName("BODY")[0].style.paddingTop = '50px';
-
-// document.getElementsByTagName("BODY")[0].style.paddingTop = document.getElementById('mainnav').style.height;
+$('a[href="#educationmessage"]').on('click',function(e){
+  // prevent normal scrolling action
+  e.preventDefault();
+  // grab the target url from the anchor's ``href``
+  var target = $(this.hash);
+  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  if (target.length) {
+    $('html,body').animate({
+        scrollTop: target.offset().top - $('nav.navbar').innerHeight()
+   }, 1000);
+   return false;
+  }
+});
+$('a[href="#contact-section"]').on('click',function(e){
+    // prevent normal scrolling action
+    e.preventDefault();
+    // grab the target url from the anchor's ``href``
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+          scrollTop: target.offset().top - $('nav.navbar').innerHeight()
+     }, 1000);
+     return false;
+    }
+});
+$('a[href="#projmessage"]').on('click',function(e){
+  // prevent normal scrolling action
+  e.preventDefault();
+  // grab the target url from the anchor's ``href``
+  var target = $(this.hash);
+  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  if (target.length) {
+    $('html,body').animate({
+        scrollTop: target.offset().top - $('nav.navbar').innerHeight()
+   }, 1000);
+   return false;
+  }
+});
 
 var cardData = [
   { image: "images/CCTall.png", class: 'mobile', alt: "Calorie Crusher Image", title: 'Calorie Crusher Mobile App', descr: 'A fitness and meal tracking mobile app created with React Native in tangent with an existing RESTful API. Users are able to set nutrition and activity goals, log meals, log activity sessions, and track daily progress to goals. Integrated accessibility features to support screen reader use.', date: 'Nov 2020', link: 'https://github.com/tituscsmith/calorie_crusher', button: 'Project Repo'},
