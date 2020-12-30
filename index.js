@@ -60,45 +60,45 @@ $("#date").on("click", function () {});
 
 // });
 
-//Partiall inspired by:
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_portfolio_gallery_filter
-filterSelection("all") // Execute the function and show all columns
+// filterSelection("all") // Execute the function and show all columns
 
-function filterSelection(c) {
-    // alert("feafa");
-  var x, i;
-  x = document.getElementsByClassName('card');
+// function filterSelection(c) {
+//     // alert("feafa");
+//   var x, i;
+//   x = document.getElementsByClassName('card');
 
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
+//   if (c == "all") c = "";
+//   for (i = 0; i < x.length; i++) {
 
-    hideElement(x[i]);
-    if (x[i].className.indexOf(c) > -1) showElement(x[i]);
-  }
-}
+//     hideElement(x[i]);
+//     if (x[i].className.indexOf(c) > -1) showElement(x[i]);
+//   }
+// }
 
-// Show filtered elements
-function showElement(element) {
-    $(element).show();
-}
+// // Show filtered elements
+// function showElement(element) {
+//     $(element).show();
+// }
 
-// Hide elements that are not selected
-function hideElement(element) {
-// element.display("none");    
-$(element).hide();
+// // Hide elements that are not selected
+// function hideElement(element) {
+// // element.display("none");    
+// $(element).hide();
 
-}
+// }
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById('TabContainer');
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    console.log("blah")
+// // Add active class to the current button (highlight it)
+// var btnContainer = document.getElementById('TabContainer');
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function(){
+//     console.log("blah")
 
-    var current = document.getElementsByClassName("active");
-    console.log(current);
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+//     var current = document.getElementsByClassName("active");
+//     console.log(current);
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+
