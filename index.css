@@ -258,6 +258,10 @@ p{
   font-size: 2vh;
   font-family: "Poppins", Arial, sans-serif;
 }
+h3{
+  font-size: 4vh !important;
+  font-family: "Poppins", Arial, sans-serif;
+}
 html {
   scroll-behavior: smooth !important;
 }
