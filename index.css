@@ -4,7 +4,6 @@
 }
 
 .mhelp{
-  /* overflow-y: hidden; */
   position: relative;
   word-wrap:break-word;
 }
