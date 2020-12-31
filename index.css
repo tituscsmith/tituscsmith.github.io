@@ -2,19 +2,11 @@
   .full-height {
     height: 100%;
 }
-.divHideScroll::-webkit-scrollbar {
-  width: 0 !important
-}
-.divHideScroll {
-  overflow: -moz-scrollbars-none;
-}
-.divHideScroll {
-  -ms-overflow-style: none;
-}
-/* helps with overflow on mobile */
+
 .mhelp{
-  overflow-y: auto;
+  /* overflow-y: hidden; */
   position: relative;
+  word-wrap:break-word;
 }
 .navbar{
   background-color: #f5faff;;
