@@ -55,7 +55,7 @@ var cardData = [
   { image: "images/CCTall.png", class: 'mobile', alt: "Calorie Crusher Image", title: 'Calorie Crusher Mobile App', descr: 'A fitness and meal tracking mobile app created with React Native in tangent with an existing RESTful API. Users are able to set nutrition and activity goals, log meals, log activity sessions, and track daily progress to goals. Integrated accessibility features to support screen reader use.', date: 'Nov 2020', link: 'https://github.com/tituscsmith/calorie_crusher', button: 'Project Repo'},
   { image: "images/classroom.png", class: 'web', alt: "Course Scheduler Image", title: 'University Course Search Web App', descr: 'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model and conducted usability inspection with heuristic evaluation. Features include search filtering, ratings and recommendations, prerequisite checks, and more.', date: 'Oct 2020', link: 'https://tituscsmith.github.io/course_scheduler/', button: 'Web App!'},
 { image: "images/moviedatabase.png", class: 'web', alt: "Movie Image", title: 'Movie Database Web App', descr: 'An IMDB-like web application with MySQL and PHP. Collaborative implemented in a 3 Person Project. Refined the schema to 3NF. Features include user-control access, search filtering across multiple tables, a movie rating system, and additional admin privileges.', date: 'July 2020', link: 'https://github.com/tituscsmith/moviesDB', button: 'Project Repo'},
-{ image: "images/MapReduceImageTalend.jpg", class: 'OS', alt: "MapReduce Image", title: 'MapReduce Word Counter', descr: 'Partner Project for CS537. Implemented the MapReduce programming model in C to calculate the word counts of 10mb of data in less than a second. Incorporated a Combiner function. Revised project individually to account for unused partitions.', date: 'May 2020<br>Repo Available upon Request*', link: 'http://pages.cs.wisc.edu/~shivaram/cs537-sp20/p4a.html', button: 'Project Description'},
+// { image: "images/MapReduceImageTalend.jpg", class: 'OS', alt: "MapReduce Image", title: 'MapReduce Word Counter', descr: 'Partner Project for CS537. Implemented the MapReduce programming model in C to calculate the word counts of 10mb of data in less than a second. Incorporated a Combiner function. Revised project individually to account for unused partitions.', date: 'May 2020<br>Repo Available upon Request*', link: 'http://pages.cs.wisc.edu/~shivaram/cs537-sp20/p4a.html', button: 'Project Description'},
 // { image: "images/Terminal.png", class: 'OS', alt: "Terminal Application Image", title: 'Unix Shell', descr: 'CS537 Simplified Unix Shell with select build in commands, like cd and path. Written in C.', date: 'February 2020<br>Repo Available upon Request*', link: 'http://pages.cs.wisc.edu/~shivaram/cs537-sp20/p2a.html', button: 'Project Description'},
 ];
 
@@ -70,14 +70,14 @@ $.each(cardData, function (i) {
         // }
 
         animation = "none";
-        var templateString = '<div><div class= "mx-2 mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '" ><img src=' + cardData[i].image + ' height = "250px" width = "300px" class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body shadow"><h4 class="card-title" style = "font-size: 2vh">' + cardData[i].title + '</h4>'+
+        var templateString = '<div style = "max-width: 400px !important" class= "mx-2 mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '" ><img src=' + cardData[i].image + ' height = "250px" width = "300px" class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body shadow"><h4 class="card-title" style = "font-size: 2vh">' + cardData[i].title + '</h4>'+
        '<p class="card-text" style = "font-size: 1.6vh">' + cardData[i].descr + '</p>' + '<div class="align-items-center d-flex justify-content-between">' +
        '<small class="text-muted">' + cardData[i].date + '</small>';
         if(cardData[i].button){
         templateString += '<a href=' + cardData[i].link + ' target="_blank"><button class="button">' + cardData[i].button + '</button></a>'
         }
 
-        templateString += '</div></div></div></div>';                 
+        templateString += '</div></div></div>';                 
         // console.log(templateString);
         $('#projdata').append(templateString);});
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
