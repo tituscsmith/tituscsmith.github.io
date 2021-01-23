@@ -8,7 +8,8 @@
   word-wrap:break-word;
 }
 .navbar{
-  background-color: #f5faff;;
+  background-color: #f5faff;
+  height: 5vh;
 }
 /* Dropup Button */
 .dropbtn {
