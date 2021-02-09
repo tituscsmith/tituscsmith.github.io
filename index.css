@@ -307,7 +307,7 @@ hr.dotted {
 }
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_iframe_169 */
-.container {
+.container-iframe {
 	position: relative;
 	overflow: hidden;
 	/* width: 70%; */
