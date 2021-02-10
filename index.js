@@ -70,17 +70,17 @@ var cardData = [
 		link: 'https://mumbler-fa910.web.app/',
 		button: 'Web App!',
 	},
-	// {
-	// 	image: 'images/shoppingassistant.jpeg',
-	// 	class: 'other',
-	// 	alt: 'Dialogflow Agent Image',
-	// 	title: 'Dialogflow Shopping Assistant',
-	// 	descr:
-	// 		'A dialogue-based interface that assists users of an online fictional store. App works with an existing web app and API. Agent includes support for users with cart and inventory queries, item filtering, web app navigation, and purchasing items. Implemented the Dialogflow webhook with  Javascript.',
-	// 	date: 'Dec 2020',
-	// 	link: 'https://github.com/tituscsmith/WiscShopDialogflow',
-	// 	button: 'Project Repo',
-	// },
+	{
+		image: 'images/shoppingassistant.jpeg',
+		class: 'other',
+		alt: 'Dialogflow Agent Image',
+		title: 'Dialogflow Shopping Assistant',
+		descr:
+			'A dialogue-based interface that assists users of an online fictional store. App works with an existing web app and API. Agent includes support for users with cart and inventory queries, item filtering, web app navigation, and purchasing items. Implemented the Dialogflow webhook with  Javascript.',
+		date: 'Dec 2020',
+		link: 'https://github.com/tituscsmith/WiscShopDialogflow',
+		button: 'Project Repo',
+	},
 	{
 		image: 'images/CCTall.png',
 		class: 'mobile',
@@ -92,7 +92,17 @@ var cardData = [
 		link: 'https://github.com/tituscsmith/calorie_crusher',
 		button: 'Project Repo',
 	},
-	// { image: "images/classroom.png", class: 'web', alt: "Course Scheduler Image", title: 'University Course Search Web App', descr: 'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model and conducted usability inspection with heuristic evaluation. Features include search filtering, ratings and recommendations, prerequisite checks, and more. ', date: 'Oct 2020', link: 'https://tituscsmith.github.io/course_scheduler/', button: 'Web App!'},
+	{
+		image: 'images/classroom.png',
+		class: 'web',
+		alt: 'Course Scheduler Image',
+		title: 'University Course Search Web App',
+		descr:
+			'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model. Features include search filtering, ratings and recommendations, prerequisite checks, and more. ',
+		date: 'Oct 2020',
+		link: 'https://tituscsmith.github.io/course_scheduler/',
+		button: 'Web App!',
+	},
 	{
 		image: 'images/moviedatabase.png',
 		class: 'web',
@@ -110,7 +120,7 @@ var cardData = [
 		alt: 'Chat Image App',
 		title: 'Socket.io Real Time Chat App',
 		descr:
-			'Web app developed with Node.js, Express, Socket.io, and MongoDB. Features include group and private messaging, persistent message storage, online/offline statuses, and more.',
+			'Web app developed with Node.js, Express, Socket.io, and MongoDB. Features include group and private messaging, persistent message storage, profanity filtering, online/offline statuses, and more. Individual Personal Project.',
 		date: 'Jun 2020',
 		link: 'https://socket-chat-titus.herokuapp.com',
 		button: 'Web App!',
@@ -120,48 +130,47 @@ var cardData = [
 ];
 // https://socket-chat-titus.herokuapp.com/
 $.each(cardData, function (i) {
-	//Animation depends on which side it is
-	// if(i%3==0){
-	// var animation = "flip-left";
-	// }else if(i%3==1){
-	// var animation = "flip-up";
-	// }else{
-	// var animation = "flip-right";
-	// }
-	//style = "max-width: 400px !important"
-	animation = 'none';
-	// var templateString = '<div class= "mx-2 mb-4 card proj ' + cardData[i].class + ' " data-aos=' + animation + '" ><img src=' + cardData[i].image + ' height = "250px" width = "300px" class="card-img-top" alt=' + cardData[i].alt + '><div class="card-body shadow"><h4 class="card-title" style = "font-size: 2vh">' + cardData[i].title + '</h4>'+
-	var templateString =
-		'<div ><div class= "mx-2 mb-4 card proj ' +
-		cardData[i].class +
-		'  " data-aos=' +
-		animation +
-		'" ><img src=' +
-		cardData[i].image +
-		' height = "250px" width = "300px" class="card-img-top" alt=' +
-		cardData[i].alt +
-		'><div class="card-body shadow"><h4 class="card-title" style = "font-size: 2vh">' +
-		cardData[i].title +
-		'</h4>' +
-		'<p class="card-text" style = "font-size: 1.6vh">' +
-		cardData[i].descr +
-		'</p>' +
-		'<div class="align-items-center d-flex justify-content-between">' +
-		'<small class="text-muted">' +
-		cardData[i].date +
-		'</small>';
-	if (cardData[i].button) {
-		templateString +=
-			'<a href=' +
-			cardData[i].link +
-			' target="_blank"><button class="button">' +
-			cardData[i].button +
-			'</button></a>';
+	var button =
+		'<a href=' +
+		cardData[i].link +
+		' target="_blank"><button class="button">' +
+		cardData[i].button +
+		'</button></a>';
+	var spacing = '';
+	//Pad spacing
+	if ((i + 1) % 2 == 0) {
+		console.log(i);
+		spacing += '<div class="w-100 d-none d-sm-block d-md-none"></div>';
 	}
+	if ((i + 1) % 3 == 0) {
+		console.log(i);
+		spacing += '<div class="w-100 d-none d-md-block d-lg-none"></div>';
+		spacing += '        <div class="w-100 d-none d-lg-block d-xl-none"></div>		';
 
-	// templateString += '</div></div></div>';
-	templateString += '</div></div></div></div>';
-
+		spacing += '        <div class="w-100 d-none d-xl-block"></div>		';
+	}
+	//style = "max-width: 500px"
+	var templateString =
+		'<div class="card mb-4 mx-2" >' +
+		'<img class = "card-img-top" height = "250px" width = "300px" src="' +
+		cardData[i].image +
+		'" alt="' +
+		cardData[i].alt +
+		'">' +
+		'<div class="card-body">' +
+		'<h4 class="card-title">' +
+		cardData[i].title +
+		' </h4>' +
+		'<p class="card-text">' +
+		cardData[i].descr +
+		'</p></div>' +
+		'<div class="card-footer align-items-center d-flex justify-content-between"><small class="text-muted">' +
+		cardData[i].date +
+		'</small>' +
+		button +
+		' </div></div>';
+	templateString += spacing;
+	console.log(templateString);
 	// console.log(templateString);
 	$('#projdata').append(templateString);
 });
