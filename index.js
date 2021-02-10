@@ -70,17 +70,17 @@ var cardData = [
 		link: 'https://mumbler-fa910.web.app/',
 		button: 'Web App!',
 	},
-	{
-		image: 'images/shoppingassistant.jpeg',
-		class: 'other',
-		alt: 'Dialogflow Agent Image',
-		title: 'Dialogflow Shopping Assistant',
-		descr:
-			'A dialogue-based interface that assists users of an online fictional store. App works with an existing web app and API. Agent includes support for users with cart and inventory queries, item filtering, web app navigation, and purchasing items. Implemented the Dialogflow webhook with  Javascript.',
-		date: 'Dec 2020',
-		link: 'https://github.com/tituscsmith/WiscShopDialogflow',
-		button: 'Project Repo',
-	},
+	// {
+	// 	image: 'images/shoppingassistant.jpeg',
+	// 	class: 'other',
+	// 	alt: 'Dialogflow Agent Image',
+	// 	title: 'Dialogflow Shopping Assistant',
+	// 	descr:
+	// 		'A dialogue-based interface that assists users of an online fictional store. App works with an existing web app and API. Agent includes support for users with cart and inventory queries, item filtering, web app navigation, and purchasing items. Implemented the Dialogflow webhook with  Javascript.',
+	// 	date: 'Dec 2020',
+	// 	link: 'https://github.com/tituscsmith/WiscShopDialogflow',
+	// 	button: 'Project Repo',
+	// },
 	{
 		image: 'images/CCTall.png',
 		class: 'mobile',
