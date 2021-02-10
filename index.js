@@ -96,7 +96,7 @@ var cardData = [
 		image: 'images/classroom.png',
 		class: 'web',
 		alt: 'Course Scheduler Image',
-		title: 'University Course Search Web App',
+		title: 'Course Search Web App',
 		descr:
 			'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model. Features include search filtering, ratings and recommendations, prerequisite checks, and more. ',
 		date: 'Oct 2020',
@@ -134,7 +134,7 @@ $.each(cardData, function (i) {
 	var button =
 		'<a href=' +
 		cardData[i].link +
-		' target="_blank"><button class="button">' +
+		' target="_blank"><button class="button" style = "background-color: lightgrey">' +
 		cardData[i].button +
 		'</button></a>';
 	var spacing = '';
@@ -158,13 +158,13 @@ $.each(cardData, function (i) {
 		cardData[i].alt +
 		'">' +
 		'<div class="card-body">' +
-		'<h4 class="card-title">' +
+		'<h5 class="card-title">' +
 		cardData[i].title +
-		' </h4>' +
+		' </h5>' +
 		'<p class="card-text">' +
 		cardData[i].descr +
 		'</p></div>' +
-		'<div class="card-footer align-items-center d-flex justify-content-between"><small class="text-muted">' +
+		'<div class="card-footer align-items-center d-flex justify-content-between" style = "background-color: white"><small class="text-muted">' +
 		cardData[i].date +
 		'</small>' +
 		button +
