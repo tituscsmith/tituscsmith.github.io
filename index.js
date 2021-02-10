@@ -71,15 +71,15 @@ var cardData = [
 		button: 'Web App!',
 	},
 	{
-		image: 'images/shoppingassistant.jpeg',
-		class: 'other',
-		alt: 'Dialogflow Agent Image',
-		title: 'Dialogflow Shopping Assistant',
+		image: 'images/Chat_App_Unsplash.jpeg',
+		class: 'web',
+		alt: 'Chat Image App',
+		title: 'Socket.io Real Time Chat App',
 		descr:
-			'A dialogue-based interface that assists users of an online fictional store. App works with an existing web app and API. Agent includes support for users with cart and inventory queries, item filtering, web app navigation, and purchasing items. Implemented the Dialogflow webhook with  Javascript.',
-		date: 'Dec 2020',
-		link: 'https://github.com/tituscsmith/WiscShopDialogflow',
-		button: 'Project Repo',
+			'Web app developed with Node.js, Express, Socket.io, and MongoDB. Features include group and private messaging, persistent message storage, profanity filtering, online/offline statuses, and more. Individual Personal Project.',
+		date: 'June 2020',
+		link: 'https://socket-chat-titus.herokuapp.com',
+		button: 'Web App!',
 	},
 	{
 		image: 'images/CCTall.png',
@@ -114,16 +114,17 @@ var cardData = [
 		link: 'https://github.com/tituscsmith/moviesDB',
 		button: 'Project Repo',
 	},
+
 	{
-		image: 'images/Chat_App_Unsplash.jpeg',
-		class: 'web',
-		alt: 'Chat Image App',
-		title: 'Socket.io Real Time Chat App',
+		image: 'images/shoppingassistant.jpeg',
+		class: 'other',
+		alt: 'Dialogflow Agent Image',
+		title: 'Dialogflow Shopping Assistant',
 		descr:
-			'Web app developed with Node.js, Express, Socket.io, and MongoDB. Features include group and private messaging, persistent message storage, profanity filtering, online/offline statuses, and more. Individual Personal Project.',
-		date: 'Jun 2020',
-		link: 'https://socket-chat-titus.herokuapp.com',
-		button: 'Web App!',
+			'A dialogue-based interface that assists users of an online fictional store. App works with an existing web app and API. Agent includes support for users with cart and inventory queries, item filtering, web app navigation, and purchasing items. Implemented the Dialogflow webhook with  Javascript.',
+		date: 'Dec 2020',
+		link: 'https://github.com/tituscsmith/WiscShopDialogflow',
+		button: 'Project Repo',
 	},
 	// { image: "images/MapReduceImageTalend.jpg", class: 'OS', alt: "MapReduce Image", title: 'MapReduce Word Counter', descr: 'Partner Project for CS537. Implemented the MapReduce programming model in C to calculate the word counts of 10mb of data in less than a second. Incorporated a Combiner function. Revised project individually to account for unused partitions.', date: 'May 2020<br>Repo Available upon Request*', link: 'http://pages.cs.wisc.edu/~shivaram/cs537-sp20/p4a.html', button: 'Project Description'},
 	// { image: "images/Terminal.png", class: 'OS', alt: "Terminal Application Image", title: 'Unix Shell', descr: 'CS537 Simplified Unix Shell with select build in commands, like cd and path. Written in C.', date: 'February 2020<br>Repo Available upon Request*', link: 'http://pages.cs.wisc.edu/~shivaram/cs537-sp20/p2a.html', button: 'Project Description'},
@@ -139,11 +140,10 @@ $.each(cardData, function (i) {
 	var spacing = '';
 	//Pad spacing
 	if ((i + 1) % 2 == 0) {
-		console.log(i);
 		spacing += '<div class="w-100 d-none d-sm-block d-md-none"></div>';
+		// spacing += '<div class="w-100 d-none d-md-block d-lg-none"></div>';
 	}
 	if ((i + 1) % 3 == 0) {
-		console.log(i);
 		spacing += '<div class="w-100 d-none d-md-block d-lg-none"></div>';
 		spacing += '        <div class="w-100 d-none d-lg-block d-xl-none"></div>		';
 
@@ -151,7 +151,7 @@ $.each(cardData, function (i) {
 	}
 	//style = "max-width: 500px"
 	var templateString =
-		'<div class="card mb-4 mx-2" >' +
+		'<div class="card mb-4 ml-sm-0 mr-sm-1 ml-md-0 mr-md-1 ml-lg-0  mr-lg-2 mx-xs-0" >' +
 		'<img class = "card-img-top" height = "250px" width = "300px" src="' +
 		cardData[i].image +
 		'" alt="' +
@@ -170,7 +170,7 @@ $.each(cardData, function (i) {
 		button +
 		' </div></div>';
 	templateString += spacing;
-	console.log(templateString);
+	// console.log(templateString);
 	// console.log(templateString);
 	$('#projdata').append(templateString);
 });
