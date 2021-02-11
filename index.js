@@ -158,7 +158,7 @@ $.each(cardData, function (i) {
 		cardData[i].alt +
 		'">' +
 		'<div class="card-body">' +
-		'<h5 class="card-title">' +
+		'<h5 class="card-title" style = "font-weight: 500 !important">' +
 		cardData[i].title +
 		' </h5>' +
 		'<p class="card-text">' +

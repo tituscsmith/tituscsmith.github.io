@@ -65,14 +65,26 @@
 	background: #f5faff;
 	text-align: center;
 }
-h1 {
-	text-align: center;
-	font-family: 'Perpetua';
-	font-size: 100px;
-}
-h4 {
+p {
 	font-family: 'Poppins', Arial, sans-serif;
 }
+.title-text {
+	font-family: 'Perpetua';
+	text-align: center;
+	font-size: 12vh;
+}
+
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', Arial, sans-serif;
+	font-weight: inherit !important;
+
+	line-height: inherit !important;
+}
+/* h6 {
+	font-weight: 400 !important;
+} */
 .animate-pop-in {
 	animation: pop-in 2s ease-out forwards;
 }
@@ -272,14 +284,11 @@ li a:hover {
 	-o-animation: flickerAnimation 3s infinite;
 	animation: flickerAnimation 3s infinite;
 }
-p {
+/* p {
 	font-size: 2vh;
 	font-family: 'Poppins', Arial, sans-serif;
-}
-h3 {
-	font-size: 4vh !important;
-	font-family: 'Poppins', Arial, sans-serif;
-}
+} */
+
 html {
 	scroll-behavior: smooth !important;
 }
@@ -301,6 +310,9 @@ hr.dotted {
 	font-family: 'Menlo', 'Monaco', 'Courier New', monospace !important;
 	font-size: 2vh !important;
 	color: grey;
+}
+.white-text {
+	color: white !important;
 }
 .fade-right.aos-animate {
 	opacity: 0;
