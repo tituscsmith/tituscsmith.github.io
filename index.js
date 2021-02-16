@@ -93,17 +93,6 @@ var cardData = [
 		button: 'Project Repo',
 	},
 	{
-		image: 'images/classroom.png',
-		class: 'web',
-		alt: 'Course Scheduler Image',
-		title: 'Course Search Web App',
-		descr:
-			'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model. Features include search filtering, ratings and recommendations, prerequisite checks, and more. ',
-		date: 'Oct 2020',
-		link: 'https://tituscsmith.github.io/course_scheduler/',
-		button: 'Web App!',
-	},
-	{
 		image: 'images/moviedatabase.png',
 		class: 'web',
 		alt: 'Movie Image',
@@ -113,6 +102,17 @@ var cardData = [
 		date: 'July 2020',
 		link: 'https://github.com/tituscsmith/moviesDB',
 		button: 'Project Repo',
+	},
+	{
+		image: 'images/classroom.png',
+		class: 'web',
+		alt: 'Course Scheduler Image',
+		title: 'Course Search Web App',
+		descr:
+			'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model. Features include search filtering, ratings and recommendations, prerequisite checks, and more. ',
+		date: 'Oct 2020',
+		link: 'https://tituscsmith.github.io/course_scheduler/',
+		button: 'Web App!',
 	},
 
 	{
