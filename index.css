@@ -336,3 +336,7 @@ hr.dotted {
 	height: 100%;
 	border: none;
 }
+
+#objectivestatement {
+	font-weight: 400 !important;
+}
