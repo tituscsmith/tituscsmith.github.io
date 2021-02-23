@@ -103,34 +103,38 @@ var cardData = [
 		link: 'https://github.com/tituscsmith/moviesDB',
 		button: 'Project Repo',
 	},
-	{
-		image: 'images/classroom.png',
-		class: 'web',
-		alt: 'Course Scheduler Image',
-		title: 'Course Search Web App',
-		descr:
-			'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model. Features include search filtering, ratings and recommendations, prerequisite checks, and more. ',
-		date: 'Oct 2020',
-		link: 'https://tituscsmith.github.io/course_scheduler/',
-		button: 'Web App!',
-	},
+	{},
+	{},
 
-	{
-		image: 'images/shoppingassistant.jpeg',
-		class: 'other',
-		alt: 'Dialogflow Agent Image',
-		title: 'Dialogflow Shopping Assistant',
-		descr:
-			'A dialogue-based interface that assists users of an online fictional store. App works with an existing web app and API. Agent includes support for users with cart and inventory queries, item filtering, web app navigation, and purchasing items. Implemented the Dialogflow webhook with  Javascript.',
-		date: 'Dec 2020',
-		link: 'https://github.com/tituscsmith/WiscShopDialogflow',
-		button: 'Project Repo',
-	},
+	// {
+	// 	image: 'images/classroom.png',
+	// 	class: 'web',
+	// 	alt: 'Course Scheduler Image',
+	// 	title: 'Course Search Web App',
+	// 	descr:
+	// 		'University course web application developed with ReactJS. Implemented the UI with a multi-level, pan & zoom navigation model. Features include search filtering, ratings and recommendations, prerequisite checks, and more. ',
+	// 	date: 'Oct 2020',
+	// 	link: 'https://tituscsmith.github.io/course_scheduler/',
+	// 	button: 'Web App!',
+	// },
+
+	// {
+	// 	image: 'images/shoppingassistant.jpeg',
+	// 	class: 'other',
+	// 	alt: 'Dialogflow Agent Image',
+	// 	title: 'Dialogflow Shopping Assistant',
+	// 	descr:
+	// 		'A dialogue-based interface that assists users of an online fictional store. App works with an existing web app and API. Agent includes support for users with cart and inventory queries, item filtering, web app navigation, and purchasing items. Implemented the Dialogflow webhook with  Javascript.',
+	// 	date: 'Dec 2020',
+	// 	link: 'https://github.com/tituscsmith/WiscShopDialogflow',
+	// 	button: 'Project Repo',
+	// },
 	// { image: "images/MapReduceImageTalend.jpg", class: 'OS', alt: "MapReduce Image", title: 'MapReduce Word Counter', descr: 'Partner Project for CS537. Implemented the MapReduce programming model in C to calculate the word counts of 10mb of data in less than a second. Incorporated a Combiner function. Revised project individually to account for unused partitions.', date: 'May 2020<br>Repo Available upon Request*', link: 'http://pages.cs.wisc.edu/~shivaram/cs537-sp20/p4a.html', button: 'Project Description'},
 	// { image: "images/Terminal.png", class: 'OS', alt: "Terminal Application Image", title: 'Unix Shell', descr: 'CS537 Simplified Unix Shell with select build in commands, like cd and path. Written in C.', date: 'February 2020<br>Repo Available upon Request*', link: 'http://pages.cs.wisc.edu/~shivaram/cs537-sp20/p2a.html', button: 'Project Description'},
 ];
 // https://socket-chat-titus.herokuapp.com/
 $.each(cardData, function (i) {
+	console.log(i);
 	var button =
 		'<a href=' +
 		cardData[i].link +
@@ -141,7 +145,6 @@ $.each(cardData, function (i) {
 	//Pad spacing
 	if ((i + 1) % 2 == 0) {
 		spacing += '<div class="w-100 d-none d-sm-block d-md-none"></div>';
-		// spacing += '<div class="w-100 d-none d-md-block d-lg-none"></div>';
 	}
 	if ((i + 1) % 3 == 0) {
 		spacing += '<div class="w-100 d-none d-md-block d-lg-none"></div>';
@@ -149,26 +152,32 @@ $.each(cardData, function (i) {
 
 		spacing += '        <div class="w-100 d-none d-xl-block"></div>		';
 	}
-	//style = "max-width: 500px"
-	var templateString =
-		'<div class="card mb-4 ml-sm-0 mr-sm-1 ml-md-0 mr-md-1 ml-lg-0  mr-lg-2 mx-xs-0" >' +
-		'<img class = "card-img-top" height = "250px" width = "300px" src="' +
-		cardData[i].image +
-		'" alt="' +
-		cardData[i].alt +
-		'">' +
-		'<div class="card-body">' +
-		'<h5 class="card-title" style = "font-weight: 500 !important">' +
-		cardData[i].title +
-		' </h5>' +
-		'<p class="card-text">' +
-		cardData[i].descr +
-		'</p></div>' +
-		'<div class="card-footer align-items-center d-flex justify-content-between" style = "background-color: white"><small class="text-muted">' +
-		cardData[i].date +
-		'</small>' +
-		button +
-		' </div></div>';
+	var templateString = '';
+	if (JSON.stringify(cardData[i]) === '{}') {
+		templateString =
+			'<div style = "visibility: hidden" class="card mb-4 d-none d-sm-block ml-sm-0 mr-sm-1 ml-md-0 mr-md-1 ml-lg-0  mr-lg-2 mx-xs-0" ><div>';
+	} else {
+		templateString =
+			'<div class="card mb-4 ml-sm-0 mr-sm-1 ml-md-0 mr-md-1 ml-lg-0  mr-lg-2 mx-xs-0" >' +
+			'<img class = "card-img-top" height = "250px" width = "300px" src="' +
+			cardData[i].image +
+			'" alt="' +
+			cardData[i].alt +
+			'">' +
+			'<div class="card-body">' +
+			'<h5 class="card-title" style = "font-weight: 500 !important">' +
+			cardData[i].title +
+			' </h5>' +
+			'<p class="card-text">' +
+			cardData[i].descr +
+			'</p></div>' +
+			'<div class="card-footer align-items-center d-flex justify-content-between" style = "background-color: white"><small class="text-muted">' +
+			cardData[i].date +
+			'</small>' +
+			button +
+			' </div></div>';
+	}
+
 	templateString += spacing;
 	// console.log(templateString);
 	// console.log(templateString);
