@@ -92,17 +92,17 @@ var cardData = [
 		link: 'https://github.com/tituscsmith/calorie_crusher',
 		button: 'Project Repo',
 	},
-	{
-		image: 'images/moviedatabase.png',
-		class: 'web',
-		alt: 'Movie Image',
-		title: 'Movie Database Web App',
-		descr:
-			'An IMDB-like web application developered with MySQL and PHP. Collaborative implemented in a 3 Person Academic Project. Refined the schema to 3NF. Features include user-control access, search filtering, a rating system, and additional admin privileges. Implementation includes queries and stored procedures.',
-		date: 'July 2020',
-		link: 'https://github.com/tituscsmith/moviesDB',
-		button: 'Project Repo',
-	},
+	// {
+	// 	image: 'images/moviedatabase.png',
+	// 	class: 'web',
+	// 	alt: 'Movie Image',
+	// 	title: 'Movie Database Web App',
+	// 	descr:
+	// 		'An IMDB-like web application developered with MySQL and PHP. Collaborative implemented in a 3 Person Academic Project. Refined the schema to 3NF. Features include user-control access, search filtering, a rating system, and additional admin privileges. Implementation includes queries and stored procedures.',
+	// 	date: 'July 2020',
+	// 	link: 'https://github.com/tituscsmith/moviesDB',
+	// 	button: 'Project Repo',
+	// },
 	{},
 	{},
 
