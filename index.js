@@ -60,6 +60,17 @@ $('a[href="#projmessage"]').on('click', function (e) {
 
 var cardData = [
 	{
+		image: 'images/WearMe.png',
+		class: 'web',
+		alt: 'WearMe Image',
+		title: 'WearMe',
+		descr:
+			'Alpha Prototype for a Startup at the center of Fashion, Socialization, and e-Commerce. Features include viewing, saving, and adding clothes to closet, exploring and filtering other closets, and combining clothing items to create outfits. ',
+		date: 'Spring 2021',
+		link: 'https://wearme-io.herokuapp.com',
+		button: 'Web App!',
+	},
+	{
 		image: 'images/Mumbler.png',
 		class: 'web',
 		alt: 'Mumbler Brand Logo',
@@ -81,17 +92,18 @@ var cardData = [
 		link: 'https://socket-chat-titus.herokuapp.com',
 		button: 'Web App!',
 	},
-	{
-		image: 'images/CCTall.png',
-		class: 'mobile',
-		alt: 'Calorie Crusher Image',
-		title: 'Calorie Crusher Mobile App',
-		descr:
-			'A fitness and meal tracking mobile app created with React Native in tangent with an existing RESTful API. Users are able to set nutrition and activity goals, log meals and activity sessions, and track daily progress to goals. Integrated accessibility features to support screen reader use on iOS.',
-		date: 'Nov 2020',
-		link: 'https://github.com/tituscsmith/calorie_crusher',
-		button: 'Project Repo',
-	},
+	// {
+	// 	image: 'images/CCTall.png',
+	// 	class: 'mobile',
+	// 	alt: 'Calorie Crusher Image',
+	// 	title: 'Calorie Crusher Mobile App',
+	// 	descr:
+	// 		'A fitness and meal tracking mobile app created with React Native in tangent with an existing RESTful API. Users are able to set nutrition and activity goals, log meals and activity sessions, and track daily progress to goals. Integrated accessibility features to support screen reader use on iOS.',
+	// 	date: 'Nov 2020',
+	// 	link: 'https://github.com/tituscsmith/calorie_crusher',
+	// 	button: 'Project Repo',
+	// },
+
 	// {
 	// 	image: 'images/moviedatabase.png',
 	// 	class: 'web',
