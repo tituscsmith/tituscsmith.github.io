@@ -65,9 +65,10 @@ var cardData = [
 		alt: 'WearMe Image',
 		title: 'WearMe',
 		descr:
-			'Alpha Prototype for a Startup at the center of Fashion, Socialization, and e-Commerce. Features include viewing, saving, and adding clothing items to a user\'s "closet", exploring other closets, and combining clothing items to create outfits. Individually developed entire application with the MERN Stack. ',
+			'Alpha Prototype for a Startup at the center of a Fashion & Socialization Startup. App is based around "Closets", where users can expore, add from, and pin items from other user\'s closets to create their own outfits. Individually developed entire web app with the MERN Stack and Google OAuth. ',
 		date: 'Spring 2021',
-		link: 'https://wearme-io.herokuapp.com',
+		// link: 'https://wearme-io.herokuapp.com',
+		link: 'https://www.wearme.io',
 		button: 'Web App!',
 	},
 	{
