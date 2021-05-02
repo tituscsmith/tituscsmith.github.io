@@ -117,7 +117,7 @@ var cardData = [
 	// 	button: 'Project Repo',
 	// },
 	{},
-	{},
+	// {},
 
 	// {
 	// 	image: 'images/classroom.png',
